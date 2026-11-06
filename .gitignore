@@ -1,0 +1,7 @@
+.installed
+.env
+__pycache__/
+frames/
+*.wav
+*.mp4
+test/
