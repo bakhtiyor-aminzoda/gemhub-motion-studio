@@ -1,7 +1,8 @@
-# GemHub Motion Studio — установка для Windows
+﻿# GemHub Motion Studio — установка для Windows
 # powershell -ExecutionPolicy Bypass -File scripts/setup.ps1 [-Check] [-Extra]
 param([switch]$Check, [switch]$Extra)
 $ErrorActionPreference = 'Continue'
+[Console]::OutputEncoding = [Text.Encoding]::UTF8
 $Root = Split-Path -Parent $PSScriptRoot
 function Has($cmd) { [bool](Get-Command $cmd -ErrorAction SilentlyContinue) }
 function Step($t) { Write-Host "`n== $t" -ForegroundColor Cyan }
